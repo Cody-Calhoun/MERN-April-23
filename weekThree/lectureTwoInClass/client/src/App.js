@@ -12,9 +12,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <MovieForm allMovies={allMovies} setAllMovies={setAllMovies}/>
+      <MovieForm allMovies={allMovies} setAllMovies={setAllMovies}/>
       <DisplayAll allMovies={allMovies}/>
-      <DisplayShrek allMovies={allMovies}/> */}
+      <DisplayShrek allMovies={allMovies}/>
       <UseEffect/>
     </div>
   );
