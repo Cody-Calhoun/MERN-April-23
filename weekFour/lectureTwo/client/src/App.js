@@ -21,6 +21,7 @@ function App() {
         <Route path="/pizza" element={<Pizza/>}/>
         <Route path="/shavingcream" element={<ShavingCream/>}/>
         <Route path="/form" element={<Form/>}/>
+        <Route path='/hello/itsme' element={<Hello/>}/>
         <Route path="/hello/:number" element={<Hello/>}/>
         <Route path="/hello/:name/" element={<Hello/>}/>
       </Routes>
