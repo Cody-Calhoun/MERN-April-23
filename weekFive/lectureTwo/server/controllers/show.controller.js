@@ -3,10 +3,10 @@ const Show = require('../models/show.model');
 module.exports = {
     // CREATE
     createShow: (req, res) => {
-        console.log(req.body)
+        // console.log(req.body)
         Show.create(req.body)
             .then(newShow => res.json(newShow))
-            .catch(err => res.status(400).json(err));
+            .catch(err => res.json(err));
     },
 
     // READ
@@ -26,7 +26,18 @@ module.exports = {
 
     // UPDATE
 
+    updateShow: (req, res) => {
+        Show.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true })
+            .then(updatedShow => res.json(updatedShow))
+            .catch(err => res.json(err));
+    },
+
     // DELETE
+    deleteShow: (req, res) => {
+        Show.findByIdAndDelete(req.params.id)
+            .then(result => res.json(result))
+            .catch(err => res.json(err));
+    }
 
 }
 
