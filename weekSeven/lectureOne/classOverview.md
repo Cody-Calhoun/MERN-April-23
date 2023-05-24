@@ -1,17 +1,11 @@
-# MERN Week Seven Lecture Two
-### May 17th, 2023
+# MERN Week Eight Lecture One
+### May 23rd, 2023
 
 ## Housekeeping:
-- Discussion Questions due Sunday
-- Core Assignment: *Authors*
+- Discussion Questions due Wednesday
+- Core Assignment: Due Wednesday
 - Belt Exam Grading
 
 ## Recap:
-- Bcrypt
-- Mongoose Virtual Fields
-
-## Async and Await
-- try / catch
-
-## Authorization / Authentication
-- Continue building out the back end
+- Back-end Recap
+- Login and Registration Continued
